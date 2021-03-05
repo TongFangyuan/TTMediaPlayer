@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - TTMediaPlayer (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - TTMediaPlayer (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  TTMediaPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  TTMediaPlayer: 7fff6527f2883712caa1acf39b94ff3a1c9ff3cc
+
+PODFILE CHECKSUM: 2f383403bec772238d654c85e65fe77fe0788b80
+
+COCOAPODS: 1.10.0

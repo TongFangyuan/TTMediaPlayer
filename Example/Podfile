@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TTMediaPlayer_Example' do
+  pod 'TTMediaPlayer', :path => '../'
+
+  target 'TTMediaPlayer_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

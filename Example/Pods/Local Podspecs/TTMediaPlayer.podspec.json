@@ -1,0 +1,23 @@
+{
+  "name": "TTMediaPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of TTMediaPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/573682532@qq.com/TTMediaPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "573682532@qq.com": "9019860+TongFangyuan@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/573682532@qq.com/TTMediaPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "TTMediaPlayer/Classes/**/*",
+  "public_header_files": "TTMediaPlayer/Classes/TTMediaPlayer.h"
+}

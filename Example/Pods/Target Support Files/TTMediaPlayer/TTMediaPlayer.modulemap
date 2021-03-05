@@ -1,0 +1,6 @@
+framework module TTMediaPlayer {
+  umbrella header "TTMediaPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

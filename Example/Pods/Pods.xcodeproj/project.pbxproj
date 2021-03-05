@@ -1,0 +1,1091 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03DB230A23629EAE02295D364FF15523 /* TTPlayerDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD66B54A5918ADA6F95124204D777F5 /* TTPlayerDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
+		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
+		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
+		163286F1D482EC13B165E362EF279792 /* TTMediaPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D18E53A6D2F42F710F802FDD4FBCFDD8 /* TTMediaPlayer-dummy.m */; };
+		18E0C262585CC64E368B51238623D765 /* TTVolumeUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D7546EA2D25B50C79F2B25FBE69051 /* TTVolumeUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D944359ADCA189156CFE3AC0CC9B957 /* Pods-TTMediaPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA377C13D13E3AD852A87F811254D81 /* Pods-TTMediaPlayer_Example-dummy.m */; };
+		225E6131CEA3A46DB6299613485AF905 /* Pods-TTMediaPlayer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E9A7EB10CEE91B42C2E68E0A18B554 /* Pods-TTMediaPlayer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAF27540BC121945CD692F4C99F47CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
+		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		337573A2779B61DBF13A63EAD0DB89DB /* TTAudioSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D893F6ABB27DAEB6F138EE9E5EDF520E /* TTAudioSessionManager.m */; };
+		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		410C2673E49FFE6424C0D37ACC9B399D /* TTPlayerDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4449E3AD2BAD831224AC7D55275B97E5 /* TTPlayerDescriptor.m */; };
+		546D0E39BEDB0FA523AD01D4E8F48733 /* TTMediaPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE551CFE36D3CDE9E412DD56B91FF6CD /* TTMediaPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DEBD1B9029299360840B2E3A3B3ECFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
+		73CA855185288A619F26211DB0BFBEBA /* Pods-TTMediaPlayer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 200CCC915D06EA594EE32D1F757975C9 /* Pods-TTMediaPlayer_Tests-dummy.m */; };
+		770C751DD4EB04E97781CD5FB2E41846 /* TTAudioSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B11DAB17D02E0EA78DCE75D3AABCDE7 /* TTAudioSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		862759D170966BB1C771257E0B3A5195 /* TTBaseTTSPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3242FCE69ADC296EF1666C32B99EB8 /* TTBaseTTSPlayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
+		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
+		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D57F1B76CD88D13C9BD761C2E4CB0D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
+		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
+		A7DD018E4B65558E83AD09593692A114 /* TTPhonePlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E0774BDC71A3D54A81A6D6DEBF68CFD2 /* TTPhonePlayerTool.m */; };
+		B2267ABB716CA86B24DE96D254001ACE /* TTBaseMusicPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C560986DFAE8ADCAA70E63D11F95A786 /* TTBaseMusicPlayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B8C3E48232B2D292136C531615753E19 /* TTUnitMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 181AAC8BC306C28EF9CFADF2AA599CF8 /* TTUnitMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		BD803BD912C287709670CE9C3BC254E5 /* TTBaseTTSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B08A749F3C465AE3D170FC459BCEAF /* TTBaseTTSPlayer.m */; };
+		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DC7960ED00D2AC2E0FA2D45902B75D00 /* TTMediaPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B4EFB5B57A47F222433B2770A3D574 /* TTMediaPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
+		EE0999EB5770BD8B159F40B7D84ED59A /* Pods-TTMediaPlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E332B16F039986A74FE22A4DC5C052E7 /* Pods-TTMediaPlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF650FA40E62FCDD7166FBA41104FD37 /* TTBaseMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 856F7029CB23EB1CC1BF36110106EE3A /* TTBaseMusicPlayer.m */; };
+		EFBC74064E12D203F707F51C05FC5B8E /* TTVolumeUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 253424EBB86DA7FCDD36E93E763B6C97 /* TTVolumeUnit.m */; };
+		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB87F4A48E1B098C3BECCF426BAE2B55 /* TTPhonePlayerTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6DCDC37C6CA74A60251DD5B5F4028C /* TTPhonePlayerTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B5C86D8B9BC460F38721F057A95F6A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		8DF9F8C325B17EF6DCA55CE99B702864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6811C22814CC37E798B4F7AECAC24BEF;
+			remoteInfo = "Pods-TTMediaPlayer_Example";
+		};
+		DC6E58EB72CA81D264A09536985D0379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C1804812C93E70CF420852DCDBB8D9F;
+			remoteInfo = TTMediaPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09749919966A4C3B4EA2A38587DC2538 /* TTMediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTMediaPlayer.debug.xcconfig; sourceTree = "<group>"; };
+		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		0F6DCDC37C6CA74A60251DD5B5F4028C /* TTPhonePlayerTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTPhonePlayerTool.h; path = TTMediaPlayer/Classes/TTPhonePlayerTool.h; sourceTree = "<group>"; };
+		155AA38D5D06E4492B76342F1D34CFDB /* Pods-TTMediaPlayer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TTMediaPlayer_Example.modulemap"; sourceTree = "<group>"; };
+		181AAC8BC306C28EF9CFADF2AA599CF8 /* TTUnitMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTUnitMacros.h; path = TTMediaPlayer/Classes/TTUnitMacros.h; sourceTree = "<group>"; };
+		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		200CCC915D06EA594EE32D1F757975C9 /* Pods-TTMediaPlayer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTMediaPlayer_Tests-dummy.m"; sourceTree = "<group>"; };
+		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		253424EBB86DA7FCDD36E93E763B6C97 /* TTVolumeUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTVolumeUnit.m; path = TTMediaPlayer/Classes/TTVolumeUnit.m; sourceTree = "<group>"; };
+		26CE5C4C7A0DECF1FC984D2D9138E4FF /* Pods_TTMediaPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TTMediaPlayer_Example.framework; path = "Pods-TTMediaPlayer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		2BEEF6BC87C57F479E4B0FCD663EBE74 /* TTMediaPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTMediaPlayer.modulemap; sourceTree = "<group>"; };
+		31AD1F7FC295886DDEF8703E5F94E258 /* Pods-TTMediaPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTMediaPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3756FA055F3440E2E01A229ACB48AF2C /* Pods-TTMediaPlayer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTMediaPlayer_Tests-Info.plist"; sourceTree = "<group>"; };
+		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		41763BB4F2410A06950908AA169B8FED /* Pods-TTMediaPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTMediaPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4449E3AD2BAD831224AC7D55275B97E5 /* TTPlayerDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTPlayerDescriptor.m; path = TTMediaPlayer/Classes/TTPlayerDescriptor.m; sourceTree = "<group>"; };
+		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		4974EC5C901E8CA3E72BBDFBA9391C83 /* Pods-TTMediaPlayer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTMediaPlayer_Example-Info.plist"; sourceTree = "<group>"; };
+		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		51FE13D5BFFE9B87F9B3162E2DA832D4 /* Pods-TTMediaPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTMediaPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		56F48722D6B4A08CBDC66A8CD38C0AEA /* TTMediaPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTMediaPlayer-Info.plist"; sourceTree = "<group>"; };
+		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E15B3F522B6DCA44631BAA0AF008A88 /* TTMediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTMediaPlayer.release.xcconfig; sourceTree = "<group>"; };
+		61FEC897FC3B47AD6C07F001064C8929 /* Pods-TTMediaPlayer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTMediaPlayer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		6617008B3404BAEFA8512F0B9B1C71B0 /* TTMediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTMediaPlayer.framework; path = TTMediaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		6B11DAB17D02E0EA78DCE75D3AABCDE7 /* TTAudioSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTAudioSessionManager.h; path = TTMediaPlayer/Classes/TTAudioSessionManager.h; sourceTree = "<group>"; };
+		706A966123AF0E41753FC8A96768DD9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		856F7029CB23EB1CC1BF36110106EE3A /* TTBaseMusicPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBaseMusicPlayer.m; path = TTMediaPlayer/Classes/TTBaseMusicPlayer.m; sourceTree = "<group>"; };
+		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		89B08A749F3C465AE3D170FC459BCEAF /* TTBaseTTSPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTBaseTTSPlayer.m; path = TTMediaPlayer/Classes/TTBaseTTSPlayer.m; sourceTree = "<group>"; };
+		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2880E07EA80F48187B180A36565182B /* Pods_TTMediaPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TTMediaPlayer_Tests.framework; path = "Pods-TTMediaPlayer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		BEA377C13D13E3AD852A87F811254D81 /* Pods-TTMediaPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TTMediaPlayer_Example-dummy.m"; sourceTree = "<group>"; };
+		C473DFC54481D1AEE776EFBAD1DF1C0A /* Pods-TTMediaPlayer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TTMediaPlayer_Tests.modulemap"; sourceTree = "<group>"; };
+		C560986DFAE8ADCAA70E63D11F95A786 /* TTBaseMusicPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBaseMusicPlayer.h; path = TTMediaPlayer/Classes/TTBaseMusicPlayer.h; sourceTree = "<group>"; };
+		C99FA265E58201AD4E9395163CEC92D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		CF4CC5250B67D797E487547A181D99F0 /* Pods-TTMediaPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TTMediaPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		D18E53A6D2F42F710F802FDD4FBCFDD8 /* TTMediaPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTMediaPlayer-dummy.m"; sourceTree = "<group>"; };
+		D2E9A7EB10CEE91B42C2E68E0A18B554 /* Pods-TTMediaPlayer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTMediaPlayer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D5E45D54121EE5FEEF74C5677C7FCC62 /* TTMediaPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTMediaPlayer-prefix.pch"; sourceTree = "<group>"; };
+		D67DBAE3184D4C88FB79DF5C6CAA2A4E /* Pods-TTMediaPlayer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TTMediaPlayer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		D893F6ABB27DAEB6F138EE9E5EDF520E /* TTAudioSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTAudioSessionManager.m; path = TTMediaPlayer/Classes/TTAudioSessionManager.m; sourceTree = "<group>"; };
+		D9F24D269627DB0453E8C30DE101575E /* Pods-TTMediaPlayer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TTMediaPlayer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0774BDC71A3D54A81A6D6DEBF68CFD2 /* TTPhonePlayerTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTPhonePlayerTool.m; path = TTMediaPlayer/Classes/TTPhonePlayerTool.m; sourceTree = "<group>"; };
+		E332B16F039986A74FE22A4DC5C052E7 /* Pods-TTMediaPlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TTMediaPlayer_Example-umbrella.h"; sourceTree = "<group>"; };
+		E566AE90FA0AADB1A35EBA8B2C9F18F1 /* Pods-TTMediaPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTMediaPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E97FBAC6C98E06D6585D7BEFDC231D17 /* Pods-TTMediaPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTMediaPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E9B4EFB5B57A47F222433B2770A3D574 /* TTMediaPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTMediaPlayer.h; path = TTMediaPlayer/Classes/TTMediaPlayer.h; sourceTree = "<group>"; };
+		EBD66B54A5918ADA6F95124204D777F5 /* TTPlayerDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTPlayerDescriptor.h; path = TTMediaPlayer/Classes/TTPlayerDescriptor.h; sourceTree = "<group>"; };
+		EF3242FCE69ADC296EF1666C32B99EB8 /* TTBaseTTSPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTBaseTTSPlayer.h; path = TTMediaPlayer/Classes/TTBaseTTSPlayer.h; sourceTree = "<group>"; };
+		F2D7546EA2D25B50C79F2B25FBE69051 /* TTVolumeUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTVolumeUnit.h; path = TTMediaPlayer/Classes/TTVolumeUnit.h; sourceTree = "<group>"; };
+		F8F541A425B15961AE79859130A8B14B /* Pods-TTMediaPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TTMediaPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FE551CFE36D3CDE9E412DD56B91FF6CD /* TTMediaPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTMediaPlayer-umbrella.h"; sourceTree = "<group>"; };
+		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		FF250760ABBDCF29833C13200D57C6BB /* TTMediaPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TTMediaPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3E73D904F79117D3BDF08AB7E9E367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEBD1B9029299360840B2E3A3B3ECFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A753EB215D366F9CE501B506C97FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAF27540BC121945CD692F4C99F47CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6854316012D572BF50CA543C5995A401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D57F1B76CD88D13C9BD761C2E4CB0D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E581515110D66F94F80A6937831489A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */,
+				2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */,
+				BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */,
+				121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2278F7542FCD211BE71B41FB9074591E /* TTMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6B11DAB17D02E0EA78DCE75D3AABCDE7 /* TTAudioSessionManager.h */,
+				D893F6ABB27DAEB6F138EE9E5EDF520E /* TTAudioSessionManager.m */,
+				C560986DFAE8ADCAA70E63D11F95A786 /* TTBaseMusicPlayer.h */,
+				856F7029CB23EB1CC1BF36110106EE3A /* TTBaseMusicPlayer.m */,
+				EF3242FCE69ADC296EF1666C32B99EB8 /* TTBaseTTSPlayer.h */,
+				89B08A749F3C465AE3D170FC459BCEAF /* TTBaseTTSPlayer.m */,
+				E9B4EFB5B57A47F222433B2770A3D574 /* TTMediaPlayer.h */,
+				0F6DCDC37C6CA74A60251DD5B5F4028C /* TTPhonePlayerTool.h */,
+				E0774BDC71A3D54A81A6D6DEBF68CFD2 /* TTPhonePlayerTool.m */,
+				EBD66B54A5918ADA6F95124204D777F5 /* TTPlayerDescriptor.h */,
+				4449E3AD2BAD831224AC7D55275B97E5 /* TTPlayerDescriptor.m */,
+				181AAC8BC306C28EF9CFADF2AA599CF8 /* TTUnitMacros.h */,
+				F2D7546EA2D25B50C79F2B25FBE69051 /* TTVolumeUnit.h */,
+				253424EBB86DA7FCDD36E93E763B6C97 /* TTVolumeUnit.m */,
+				CB85F353E24836B1F436C68A0673A44C /* Pod */,
+				24211BA88F1D6DFF167F0CF757B42B38 /* Support Files */,
+			);
+			name = TTMediaPlayer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		24211BA88F1D6DFF167F0CF757B42B38 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BEEF6BC87C57F479E4B0FCD663EBE74 /* TTMediaPlayer.modulemap */,
+				D18E53A6D2F42F710F802FDD4FBCFDD8 /* TTMediaPlayer-dummy.m */,
+				56F48722D6B4A08CBDC66A8CD38C0AEA /* TTMediaPlayer-Info.plist */,
+				D5E45D54121EE5FEEF74C5677C7FCC62 /* TTMediaPlayer-prefix.pch */,
+				FE551CFE36D3CDE9E412DD56B91FF6CD /* TTMediaPlayer-umbrella.h */,
+				09749919966A4C3B4EA2A38587DC2538 /* TTMediaPlayer.debug.xcconfig */,
+				5E15B3F522B6DCA44631BAA0AF008A88 /* TTMediaPlayer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TTMediaPlayer";
+			sourceTree = "<group>";
+		};
+		3A9BF9153EE9F1972BC17B5E95695DB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				26CE5C4C7A0DECF1FC984D2D9138E4FF /* Pods_TTMediaPlayer_Example.framework */,
+				A2880E07EA80F48187B180A36565182B /* Pods_TTMediaPlayer_Tests.framework */,
+				6617008B3404BAEFA8512F0B9B1C71B0 /* TTMediaPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */,
+				277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */,
+				88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */,
+				6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */,
+				AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */,
+				7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */,
+				99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */,
+				0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */,
+				656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */,
+				235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */,
+				96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */,
+				4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */,
+				284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */,
+				D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		546B5E7362B1B0EE8BD0A731835C33CA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2278F7542FCD211BE71B41FB9074591E /* TTMediaPlayer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8BB01553B6169C9098CBFC0CF6A19638 /* Pods-TTMediaPlayer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				155AA38D5D06E4492B76342F1D34CFDB /* Pods-TTMediaPlayer_Example.modulemap */,
+				CF4CC5250B67D797E487547A181D99F0 /* Pods-TTMediaPlayer_Example-acknowledgements.markdown */,
+				41763BB4F2410A06950908AA169B8FED /* Pods-TTMediaPlayer_Example-acknowledgements.plist */,
+				BEA377C13D13E3AD852A87F811254D81 /* Pods-TTMediaPlayer_Example-dummy.m */,
+				31AD1F7FC295886DDEF8703E5F94E258 /* Pods-TTMediaPlayer_Example-frameworks.sh */,
+				4974EC5C901E8CA3E72BBDFBA9391C83 /* Pods-TTMediaPlayer_Example-Info.plist */,
+				E332B16F039986A74FE22A4DC5C052E7 /* Pods-TTMediaPlayer_Example-umbrella.h */,
+				F8F541A425B15961AE79859130A8B14B /* Pods-TTMediaPlayer_Example.debug.xcconfig */,
+				E97FBAC6C98E06D6585D7BEFDC231D17 /* Pods-TTMediaPlayer_Example.release.xcconfig */,
+			);
+			name = "Pods-TTMediaPlayer_Example";
+			path = "Target Support Files/Pods-TTMediaPlayer_Example";
+			sourceTree = "<group>";
+		};
+		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		B67E7ADE813E16CC035FF197EDC9EEBC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BB01553B6169C9098CBFC0CF6A19638 /* Pods-TTMediaPlayer_Example */,
+				F706F68D47E2B138BAD542716BA75266 /* Pods-TTMediaPlayer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */,
+				1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */,
+				B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */,
+				D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */,
+				8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */,
+				9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */,
+				4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				4BA2479549DD918290454B1CDCD0B92B /* Core */,
+				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
+				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
+			);
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		CB85F353E24836B1F436C68A0673A44C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C99FA265E58201AD4E9395163CEC92D5 /* LICENSE */,
+				706A966123AF0E41753FC8A96768DD9D /* README.md */,
+				FF250760ABBDCF29833C13200D57C6BB /* TTMediaPlayer.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				546B5E7362B1B0EE8BD0A731835C33CA /* Development Pods */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				E81A37DBDE41E671312C56736544E2FA /* Pods */,
+				3A9BF9153EE9F1972BC17B5E95695DB4 /* Products */,
+				B67E7ADE813E16CC035FF197EDC9EEBC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F706F68D47E2B138BAD542716BA75266 /* Pods-TTMediaPlayer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C473DFC54481D1AEE776EFBAD1DF1C0A /* Pods-TTMediaPlayer_Tests.modulemap */,
+				61FEC897FC3B47AD6C07F001064C8929 /* Pods-TTMediaPlayer_Tests-acknowledgements.markdown */,
+				D9F24D269627DB0453E8C30DE101575E /* Pods-TTMediaPlayer_Tests-acknowledgements.plist */,
+				200CCC915D06EA594EE32D1F757975C9 /* Pods-TTMediaPlayer_Tests-dummy.m */,
+				D67DBAE3184D4C88FB79DF5C6CAA2A4E /* Pods-TTMediaPlayer_Tests-frameworks.sh */,
+				3756FA055F3440E2E01A229ACB48AF2C /* Pods-TTMediaPlayer_Tests-Info.plist */,
+				D2E9A7EB10CEE91B42C2E68E0A18B554 /* Pods-TTMediaPlayer_Tests-umbrella.h */,
+				51FE13D5BFFE9B87F9B3162E2DA832D4 /* Pods-TTMediaPlayer_Tests.debug.xcconfig */,
+				E566AE90FA0AADB1A35EBA8B2C9F18F1 /* Pods-TTMediaPlayer_Tests.release.xcconfig */,
+			);
+			name = "Pods-TTMediaPlayer_Tests";
+			path = "Target Support Files/Pods-TTMediaPlayer_Tests";
+			sourceTree = "<group>";
+		};
+		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
+				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
+				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
+				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37BF8B1972EE18528FCF097CC737A623 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0999EB5770BD8B159F40B7D84ED59A /* Pods-TTMediaPlayer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */,
+				C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */,
+				90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */,
+				40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */,
+				F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */,
+				D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */,
+				B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531FA5AAC6000767AB5B10E1DA1924A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770C751DD4EB04E97781CD5FB2E41846 /* TTAudioSessionManager.h in Headers */,
+				B2267ABB716CA86B24DE96D254001ACE /* TTBaseMusicPlayer.h in Headers */,
+				862759D170966BB1C771257E0B3A5195 /* TTBaseTTSPlayer.h in Headers */,
+				546D0E39BEDB0FA523AD01D4E8F48733 /* TTMediaPlayer-umbrella.h in Headers */,
+				DC7960ED00D2AC2E0FA2D45902B75D00 /* TTMediaPlayer.h in Headers */,
+				FB87F4A48E1B098C3BECCF426BAE2B55 /* TTPhonePlayerTool.h in Headers */,
+				03DB230A23629EAE02295D364FF15523 /* TTPlayerDescriptor.h in Headers */,
+				B8C3E48232B2D292136C531615753E19 /* TTUnitMacros.h in Headers */,
+				18E0C262585CC64E368B51238623D765 /* TTVolumeUnit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2AA95DD142E02807315A3861D0D4AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225E6131CEA3A46DB6299613485AF905 /* Pods-TTMediaPlayer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C1804812C93E70CF420852DCDBB8D9F /* TTMediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D9B3323B5EBCAD82C14D24CCED8F143 /* Build configuration list for PBXNativeTarget "TTMediaPlayer" */;
+			buildPhases = (
+				531FA5AAC6000767AB5B10E1DA1924A4 /* Headers */,
+				2BAFA0676F60442E671A84D830084D5E /* Sources */,
+				4B3E73D904F79117D3BDF08AB7E9E367 /* Frameworks */,
+				1DB90B70DC07CAE40FED013941B813F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTMediaPlayer;
+			productName = TTMediaPlayer;
+			productReference = 6617008B3404BAEFA8512F0B9B1C71B0 /* TTMediaPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3FB4735A7A9B9C9D9D66C784480E0C5A /* Pods-TTMediaPlayer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61DBE5B54FA07E5DBA2B91F4E2128518 /* Build configuration list for PBXNativeTarget "Pods-TTMediaPlayer_Tests" */;
+			buildPhases = (
+				DC2AA95DD142E02807315A3861D0D4AF /* Headers */,
+				3848F6B5380F81FCC3BFA4DC898EBE93 /* Sources */,
+				6854316012D572BF50CA543C5995A401 /* Frameworks */,
+				01CB5CD5D3E46F157CEABBAE06C016BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91E8E823799BFFBAD894407018182A9 /* PBXTargetDependency */,
+				C1FD1D4AB5B239279AF9883381C1AA55 /* PBXTargetDependency */,
+			);
+			name = "Pods-TTMediaPlayer_Tests";
+			productName = "Pods-TTMediaPlayer_Tests";
+			productReference = A2880E07EA80F48187B180A36565182B /* Pods_TTMediaPlayer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6811C22814CC37E798B4F7AECAC24BEF /* Pods-TTMediaPlayer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98FFEA268C30624BEAB91BC014709503 /* Build configuration list for PBXNativeTarget "Pods-TTMediaPlayer_Example" */;
+			buildPhases = (
+				37BF8B1972EE18528FCF097CC737A623 /* Headers */,
+				0F2BC54B0C01FDA76801CF933CECE0B5 /* Sources */,
+				52A753EB215D366F9CE501B506C97FB6 /* Frameworks */,
+				252FB7637B49A82F195F2E0AF4C57BEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B43B294C759B18797AE4480E66DF544D /* PBXTargetDependency */,
+			);
+			name = "Pods-TTMediaPlayer_Example";
+			productName = "Pods-TTMediaPlayer_Example";
+			productReference = 26CE5C4C7A0DECF1FC984D2D9138E4FF /* Pods_TTMediaPlayer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */,
+				A48201AC594B2E6B09C0EE0396BC1377 /* Sources */,
+				E581515110D66F94F80A6937831489A1 /* Frameworks */,
+				5CC655F1A6C7A45A9693160581076BAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3A9BF9153EE9F1972BC17B5E95695DB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
+				6811C22814CC37E798B4F7AECAC24BEF /* Pods-TTMediaPlayer_Example */,
+				3FB4735A7A9B9C9D9D66C784480E0C5A /* Pods-TTMediaPlayer_Tests */,
+				1C1804812C93E70CF420852DCDBB8D9F /* TTMediaPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01CB5CD5D3E46F157CEABBAE06C016BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB90B70DC07CAE40FED013941B813F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252FB7637B49A82F195F2E0AF4C57BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC655F1A6C7A45A9693160581076BAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F2BC54B0C01FDA76801CF933CECE0B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D944359ADCA189156CFE3AC0CC9B957 /* Pods-TTMediaPlayer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAFA0676F60442E671A84D830084D5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337573A2779B61DBF13A63EAD0DB89DB /* TTAudioSessionManager.m in Sources */,
+				EF650FA40E62FCDD7166FBA41104FD37 /* TTBaseMusicPlayer.m in Sources */,
+				BD803BD912C287709670CE9C3BC254E5 /* TTBaseTTSPlayer.m in Sources */,
+				163286F1D482EC13B165E362EF279792 /* TTMediaPlayer-dummy.m in Sources */,
+				A7DD018E4B65558E83AD09593692A114 /* TTPhonePlayerTool.m in Sources */,
+				410C2673E49FFE6424C0D37ACC9B399D /* TTPlayerDescriptor.m in Sources */,
+				EFBC74064E12D203F707F51C05FC5B8E /* TTVolumeUnit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3848F6B5380F81FCC3BFA4DC898EBE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73CA855185288A619F26211DB0BFBEBA /* Pods-TTMediaPlayer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48201AC594B2E6B09C0EE0396BC1377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
+				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
+				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
+				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
+				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
+				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
+				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
+				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
+				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A91E8E823799BFFBAD894407018182A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 5B5C86D8B9BC460F38721F057A95F6A8 /* PBXContainerItemProxy */;
+		};
+		B43B294C759B18797AE4480E66DF544D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTMediaPlayer;
+			target = 1C1804812C93E70CF420852DCDBB8D9F /* TTMediaPlayer */;
+			targetProxy = DC6E58EB72CA81D264A09536985D0379 /* PBXContainerItemProxy */;
+		};
+		C1FD1D4AB5B239279AF9883381C1AA55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TTMediaPlayer_Example";
+			target = 6811C22814CC37E798B4F7AECAC24BEF /* Pods-TTMediaPlayer_Example */;
+			targetProxy = 8DF9F8C325B17EF6DCA55CE99B702864 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		467FA25E100CEF8E30EA26B2836BD83E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FE13D5BFFE9B87F9B3162E2DA832D4 /* Pods-TTMediaPlayer_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TTMediaPlayer_Tests/Pods-TTMediaPlayer_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTMediaPlayer_Tests/Pods-TTMediaPlayer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		579C7E2F89BEA6220399CDC73192D75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09749919966A4C3B4EA2A38587DC2538 /* TTMediaPlayer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TTMediaPlayer/TTMediaPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTMediaPlayer/TTMediaPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTMediaPlayer/TTMediaPlayer.modulemap";
+				PRODUCT_MODULE_NAME = TTMediaPlayer;
+				PRODUCT_NAME = TTMediaPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEB78661C74600DA2B4649B021697269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F541A425B15961AE79859130A8B14B /* Pods-TTMediaPlayer_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TTMediaPlayer_Example/Pods-TTMediaPlayer_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTMediaPlayer_Example/Pods-TTMediaPlayer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF531801B332EDF71FA8F4F9667B86BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF8BDF7A13B82B37A7EEE5E0D2E3F188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E15B3F522B6DCA44631BAA0AF008A88 /* TTMediaPlayer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TTMediaPlayer/TTMediaPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTMediaPlayer/TTMediaPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTMediaPlayer/TTMediaPlayer.modulemap";
+				PRODUCT_MODULE_NAME = TTMediaPlayer;
+				PRODUCT_NAME = TTMediaPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C84FC74A4D0AE09253E7111B012732D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E566AE90FA0AADB1A35EBA8B2C9F18F1 /* Pods-TTMediaPlayer_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TTMediaPlayer_Tests/Pods-TTMediaPlayer_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTMediaPlayer_Tests/Pods-TTMediaPlayer_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D4C766F636B8AC7E287DB13CB02F66EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97FBAC6C98E06D6585D7BEFDC231D17 /* Pods-TTMediaPlayer_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TTMediaPlayer_Example/Pods-TTMediaPlayer_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TTMediaPlayer_Example/Pods-TTMediaPlayer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D9B3323B5EBCAD82C14D24CCED8F143 /* Build configuration list for PBXNativeTarget "TTMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				579C7E2F89BEA6220399CDC73192D75B /* Debug */,
+				BF8BDF7A13B82B37A7EEE5E0D2E3F188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61DBE5B54FA07E5DBA2B91F4E2128518 /* Build configuration list for PBXNativeTarget "Pods-TTMediaPlayer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				467FA25E100CEF8E30EA26B2836BD83E /* Debug */,
+				C84FC74A4D0AE09253E7111B012732D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98FFEA268C30624BEAB91BC014709503 /* Build configuration list for PBXNativeTarget "Pods-TTMediaPlayer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEB78661C74600DA2B4649B021697269 /* Debug */,
+				D4C766F636B8AC7E287DB13CB02F66EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */,
+				BF531801B332EDF71FA8F4F9667B86BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
