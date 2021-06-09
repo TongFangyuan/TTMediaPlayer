@@ -232,7 +232,13 @@
     static dispatch_once_t onceToken;
     static NSDictionary *_modeDesc = nil;
     dispatch_once(&onceToken, ^{
-        _modeDesc = @{@(TTPhonePlayModeOrder):@"顺序播放(播完最后一首歌停止)",@(TTPhonePlayModeCircle):@"循环播放(播放完最后一首歌会切到第一首歌播放)",@(TTPhonePlayModeRandom):@"随机播放",@(TTPhonePlayModeOneMusic):@"单曲播放"};
+        _modeDesc = @{
+            @(TTPhonePlayModeOrder):@"顺序播放(播完最后一首歌停止)"
+            ,@(TTPhonePlayModeCircle):@"循环播放(播放完最后一首歌会切到第一首歌播放)"
+            ,@(TTPhonePlayModeRandom):@"随机播放"
+            ,@(TTPhonePlayModeOneMusic):@"单曲播放"
+            ,@(TTPhonePlayModeStopAfterCurrent):@"播完当前歌曲后，停止"
+        };
     });
     return _modeDesc[@(mode)];
 }
@@ -279,7 +285,9 @@
         case TTPhonePlayModeCircle:
             return [self circleNextAlbumTrack];
             break;
+        case TTPhonePlayModeStopAfterCurrent:
         default:
+            return [self orderNextAlbumTrack];
             break;
     }
 }
@@ -490,8 +498,9 @@ static TTPlayerItemProperty TTPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 - (void)playerItemDidPlayToEndTime:(NSNotification *)noti {
     NSLog(@"🔋 播放完成：%@",noti);
     [self notiPlayFinished];
-    
+    if (self.playMode!=TTPhonePlayModeStopAfterCurrent) {
     [self autoNext];
+    }
 }
 
 @end

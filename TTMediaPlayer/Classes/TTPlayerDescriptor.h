@@ -77,6 +77,7 @@ typedef enum : NSUInteger {
     TTPhonePlayModeRandom,     //!< 随机播放 kTLPhonePlayModeRandom
     TTPhonePlayModeOneMusic,   //!< 单曲播放 kTLPhonePlayModeOneMusic
     TTPhonePlayModeOrder,      //!< 顺序播放(播完最后一首歌停止)
+    TTPhonePlayModeStopAfterCurrent, //!< 播完当前歌曲后停止
 } TTPhonePlayMode;
 /** 播放模式 */
 @property (nonatomic, assign) TTPhonePlayMode playMode;
