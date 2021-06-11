@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) id<TTAlbumTrackProtocol> albumTrack;
 /** 歌曲队列 */
 @property (nonatomic, strong) NSArray<id<TTAlbumTrackProtocol>> *songList;
+/** 随机播放歌曲列表，切歌顺序打乱*/
+@property (nonatomic, strong) NSArray<id<TTAlbumTrackProtocol>> *randomSongList;
 /** 当前播放索引 */
 @property (nonatomic, assign) NSInteger currentTrackIndex;
 /** 播放模式 */

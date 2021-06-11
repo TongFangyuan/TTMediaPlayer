@@ -72,6 +72,17 @@
     self.songList = [NSArray arrayWithArray:ablums];
 }
 
+- (void)setSongList:(NSArray<id<TTAlbumTrackProtocol>> *)songList{
+    _songList = songList;
+    NSInteger i = _songList.count;
+    NSMutableArray *mut = _songList.mutableCopy;
+    while (--i > 0) {
+        NSInteger j = rand() % (i+1);
+        [mut exchangeObjectAtIndex:i withObjectAtIndex:j];
+    }
+    self.randomSongList = mut.copy;
+}
+
 - (void)seekToPosition:(CGFloat)position {
     if (!self.timeObserver) {
         NSLog(@"🔋 无法跳播");
@@ -252,49 +263,57 @@
 - (id<TTAlbumTrackProtocol>)manualNextAlbumTrack {
     switch (self.playMode) {
         case TTPhonePlayModeRandom:
-            return [self randomAlbumTrack];
-            break;
+            return [self randomNextAlbumTrack];
         default:
             return [self circleNextAlbumTrack];
-            break;
     }
 }
 
 - (id<TTAlbumTrackProtocol>)manualPreviousAlbumTrack {
     switch (self.playMode) {
         case TTPhonePlayModeRandom:
-            return [self randomAlbumTrack];
-            break;
+            return [self randomPreviousAlbumTrack];
         default:
             return [self circlePreviousAlbumTrack];
-            break;
     }
 }
 
 - (id<TTAlbumTrackProtocol>)autoNextAlbumTrack {
     switch (self.playMode) {
-        case TTPhonePlayModeRandom:
-            return [self randomAlbumTrack];
-            break;
         case TTPhonePlayModeOneMusic:
             return [self albumTrack];
-            break;
+        case TTPhonePlayModeRandom:
+            return [self randomAlbumTrack];
         case TTPhonePlayModeOrder:
             return [self orderNextAlbumTrack];
-            break;
         case TTPhonePlayModeCircle:
-            return [self circleNextAlbumTrack];
-            break;
         case TTPhonePlayModeStopAfterCurrent:
         default:
-            return [self orderNextAlbumTrack];
-            break;
+            return [self circleNextAlbumTrack];
     }
 }
 
 - (id<TTAlbumTrackProtocol>)randomAlbumTrack {
     NSInteger index = arc4random()%self.songList.count;
     return self.songList[index];
+}
+
+- (id<TTAlbumTrackProtocol>)randomNextAlbumTrack {
+    NSInteger currentIndex = [self.randomSongList indexOfObject:self.albumTrack];
+    if (currentIndex>=self.randomSongList.count) {
+        return self.randomSongList.firstObject;
+    }
+    id<TTAlbumTrackProtocol> album = self.randomSongList[currentIndex+1];
+    return album;
+}
+
+- (id<TTAlbumTrackProtocol>)randomPreviousAlbumTrack {
+    NSInteger currentIndex = [self.randomSongList indexOfObject:self.albumTrack];
+    if (currentIndex==0) {
+        return self.randomSongList.lastObject;
+    }
+    id<TTAlbumTrackProtocol> album = self.randomSongList[currentIndex-1];
+    return album;
 }
 
 - (id<TTAlbumTrackProtocol>)firstAlbumTrack {
@@ -568,6 +587,13 @@ static TTPlayerItemProperty TTPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp"
 }
 
 - (void)notiPlayDidStart {
+    NSInteger i = self.randomSongList.count;
+    NSMutableArray*mut = self.randomSongList.mutableCopy;
+    while (--i > 0) {
+        NSInteger j = rand() % (i+1);
+        [mut exchangeObjectAtIndex:i withObjectAtIndex:j];
+    }
+    self.randomSongList = mut.copy;
     if ([self.delegate respondsToSelector:@selector(playerDidStart:)]) {
         [self.delegate playerDidStart:self];
     }

@@ -262,6 +262,22 @@ static id _shareInstance;
     _playMode = playMode;
 }
 
+- (void)setAlbumTracks:(NSArray<id<TTAlbumTrackProtocol>> *)albumTracks{
+    self.player.songList = albumTracks;
+}
+
+- (NSArray<id<TTAlbumTrackProtocol>> *)albumTracks{
+    return self.player.songList;
+}
+
+- (void)setRandomAlbumTracks:(NSArray<id<TTAlbumTrackProtocol>> *)randomAlbumTracks {
+    self.player.randomSongList = randomAlbumTracks;
+}
+
+- (NSArray<id<TTAlbumTrackProtocol>> *)randomAlbumTracks{
+    return self.player.randomSongList;
+}
+
 - (NSString *)mediaSource {
     NSString *source = [self mediaSourceForPlayer:self.player];
     NSLog(@"当前音频资源类型：%@",source);
@@ -333,7 +349,7 @@ static id _shareInstance;
         }
     }
 }
-- (void)playerDidFinished:(id<TTMusicPlayerObject>)player{
+- (void)playerDidFinished:(id<TTMusicPlayerObject>)player {
     //    NSLog(@"🔥 playerDidFinished");
     self.isMediaPlaying = player.isPlaying;
     
@@ -347,7 +363,7 @@ static id _shareInstance;
         }
     }
 }
-- (void)playerDidContiuPlay:(id<TTMusicPlayerObject>)player{
+- (void)playerDidContiuPlay:(id<TTMusicPlayerObject>)player {
     //    NSLog(@"🔥 playerDidContiuPlay");
     [self updateLockScreenInfo];
     self.isMediaPlaying = player.isPlaying;
@@ -372,7 +388,7 @@ static id _shareInstance;
         }
     }
 }
-- (void)playerBufferFull:(id<TTMusicPlayerObject>)player{
+- (void)playerBufferFull:(id<TTMusicPlayerObject>)player {
     //    NSLog(@"🔥 playerBufferFull");
     
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
@@ -384,7 +400,7 @@ static id _shareInstance;
         }
     }
 }
-- (void)playerBufferEmpty:(id<TTMusicPlayerObject>)player{
+- (void)playerBufferEmpty:(id<TTMusicPlayerObject>)player {
 //    NSLog(@"🔥 playerBufferEmpty");
     
     for (id<TTPhonePlayToolObserver> obj in self.observers) {
@@ -657,7 +673,6 @@ static id _shareInstance;
 
 - (void)updatePlaylist:(NSArray<id<TTAlbumTrackProtocol>> *)albums {
     self.albumTracks = [NSArray arrayWithArray:albums];
-    [self.player updateAblumTracks:albums];
 }
 
 - (void)seekMusicToPosition:(CGFloat)position {

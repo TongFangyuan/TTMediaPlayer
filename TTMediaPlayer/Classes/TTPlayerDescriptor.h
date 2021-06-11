@@ -69,6 +69,8 @@ typedef NSString * TTMediaSourceName;
 @property (nonatomic, strong) id<TTAlbumTrackProtocol> albumTrack;
 /** 歌曲队列 */
 @property (nonatomic, strong) NSArray<id<TTAlbumTrackProtocol>> *songList;
+/** 随机播放歌曲列表，切歌顺序打乱*/
+@property (nonatomic, strong) NSArray<id<TTAlbumTrackProtocol>> *randomSongList;
 /** 当前播放索引 */
 @property (nonatomic, assign) NSInteger currentTrackIndex;
 /// 歌曲播放模式
@@ -162,6 +164,8 @@ typedef NS_ENUM(NSInteger, TTMusicPlayerControl) {
 @property (nonatomic, strong) id<TTAlbumTrackProtocol> albumTrack;
 /** 歌曲队列 */
 @property (nonatomic, strong) NSArray<id<TTAlbumTrackProtocol>> *albumTracks;
+/** 随机播放歌曲列表，切歌顺序打乱*/
+@property (nonatomic, strong) NSArray<id<TTAlbumTrackProtocol>> *randomAlbumTracks;
 /** 当前播放索引 */
 @property (nonatomic, assign) NSInteger currentTrackIndex;
 /** 当前时间 */
