@@ -48,7 +48,7 @@ void TTBaseTTSPlayerNotiPlayFinish() {
 
 - (void)playTTS:(NSString *)url {
     NSURL *URL = nil;
-    if ([url hasPrefix:@"http://"] || [url hasPrefix:@"https://"]) {
+    if ([url hasPrefix:@"http://"] || [url hasPrefix:@"https://"] || [url hasPrefix:@"ipod-library://"]) {
         URL =[NSURL URLWithString:url];
     } else {
         URL = [NSURL fileURLWithPath:url];

@@ -38,7 +38,13 @@
     [self stop];
     [self notiPlayWillStart];
     
-    AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:url]];
+    NSURL *URL = nil;
+    if ([url hasPrefix:@"http://"] || [url hasPrefix:@"https://"] || [url hasPrefix:@"ipod-library://"]) {
+        URL =[NSURL URLWithString:url];
+    } else {
+        URL = [NSURL fileURLWithPath:url];
+    }
+    AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:URL];
     AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
     self.player = player;
     [self addTimeObserver];
